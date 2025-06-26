@@ -19,32 +19,5 @@ Organizations have their own lifecycle.
 
 ![./domain.png](domain.png)
 
-## run ADD NEW MOTOR USECASE:
-```bash
-yarn ts-node app-cli/myAppName/app-cli-add-motor.ts  
-```
-
-## run ASSIGN ORGA USECASE:
-```bash
-yarn ts-node app-cli/myAppName/app-cli-assign-orga.ts  
-```
-
-## cleanup local files:
-```bash
-yarn cleanup
-```
-
-## test service setup:
-```bash
-yarn test
-```
-
-## dependency graph:
-! need `dot` (graphviz) to be installed on your machine
-
-```bash
-yarn create-dependency-graph
-```
-output will be in `./dependency-graph.svg`
 
 ![./dependencygraph.svg](./dependencygraph_lambda.svg)
