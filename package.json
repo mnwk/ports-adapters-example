@@ -14,8 +14,10 @@
   },
   "scripts": {
     "test": "jest",
-    "create-dependency-graph": "ts_dependency_graph --filter test --agg --start services --graph_folder | dot -T svg > dependencygraph_lambda.svg",
-    "cleanup": "rm -rf app-lambda/data/* -- ^.gitkeep"
+    "create-dependency-graph": "ts_dependency_graph --filter test --agg --start services  --graph_folder | dot -T svg > dependencygraph_lambda.svg",
+    "cleanup": "rm -rf app-lambda/data/* -- ^.gitkeep",
+    "start:express": "ts-node app-express/index.ts",
+    "start:organization": "ts-node app-express/organization/server.ts"
   },
   "dependencies": {
     "@types/cors": "^2.8.19",
